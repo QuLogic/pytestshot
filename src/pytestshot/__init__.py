@@ -70,8 +70,6 @@ def wait():
 
 
 def screenshot(gdk_window):
-    wait()
-    time.sleep(0.5)
     pb = Gdk.pixbuf_get_from_window(
         gdk_window, 0, 0, gdk_window.get_width(), gdk_window.get_height()
     )
